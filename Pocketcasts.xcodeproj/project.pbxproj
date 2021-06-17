@@ -11,8 +11,24 @@
 		225672FD2677C18B00C6B122 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225672FC2677C18B00C6B122 /* ContentView.swift */; };
 		225672FF2677C18F00C6B122 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 225672FE2677C18F00C6B122 /* Assets.xcassets */; };
 		225673022677C18F00C6B122 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 225673012677C18F00C6B122 /* Preview Assets.xcassets */; };
-		2256730C2677C19000C6B122 /* PocketcastsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2256730B2677C19000C6B122 /* PocketcastsTests.swift */; };
+		2256730C2677C19000C6B122 /* BaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2256730B2677C19000C6B122 /* BaseTestCase.swift */; };
 		225673162677C19000C6B122 /* PocketcastsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225673152677C19000C6B122 /* PocketcastsUITests.swift */; };
+		225673262677C27400C6B122 /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225673252677C27400C6B122 /* Podcast.swift */; };
+		225673282677C44700C6B122 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225673272677C44700C6B122 /* Episode.swift */; };
+		2256732A2677C72900C6B122 /* SubscriptionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225673292677C72900C6B122 /* SubscriptionStatus.swift */; };
+		2256732F2677C86D00C6B122 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2256732E2677C86D00C6B122 /* Endpoint.swift */; };
+		22567335267A104E00C6B122 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22567334267A104E00C6B122 /* URLSession.swift */; };
+		22567339267A126D00C6B122 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22567338267A126D00C6B122 /* User.swift */; };
+		2256733B267A1CD800C6B122 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2256733A267A1CD800C6B122 /* HTTPMethod.swift */; };
+		2256733D267B60D300C6B122 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2256733C267B60D300C6B122 /* LoginTests.swift */; };
+		2256733F267B619800C6B122 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2256733E267B619800C6B122 /* Network.swift */; };
+		22AA926A267B6A9A00E038D3 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA9269267B6A9A00E038D3 /* AccessToken.swift */; };
+		22AA926E267B6BF100E038D3 /* Endpoint+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA926D267B6BF100E038D3 /* Endpoint+User.swift */; };
+		22AA9270267B6C0B00E038D3 /* Endpoint+Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA926F267B6C0B00E038D3 /* Endpoint+Podcast.swift */; };
+		22AA9272267B6C5800E038D3 /* PodcastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA9271267B6C5800E038D3 /* PodcastTests.swift */; };
+		22AA9274267B700600E038D3 /* BaseTestCase+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA9273267B700600E038D3 /* BaseTestCase+User.swift */; };
+		22AA9276267BC8EB00E038D3 /* Endpoint+SubscriptionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA9275267BC8EB00E038D3 /* Endpoint+SubscriptionStatus.swift */; };
+		22AA9278267BC92D00E038D3 /* SubscriptionStatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA9277267BC92D00E038D3 /* SubscriptionStatusTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +55,27 @@
 		225672FE2677C18F00C6B122 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		225673012677C18F00C6B122 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		225673072677C19000C6B122 /* PocketcastsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketcastsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2256730B2677C19000C6B122 /* PocketcastsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketcastsTests.swift; sourceTree = "<group>"; };
+		2256730B2677C19000C6B122 /* BaseTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTestCase.swift; sourceTree = "<group>"; };
 		225673112677C19000C6B122 /* PocketcastsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketcastsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		225673152677C19000C6B122 /* PocketcastsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketcastsUITests.swift; sourceTree = "<group>"; };
+		225673232677C1EA00C6B122 /* Pocketcasts.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pocketcasts.entitlements; sourceTree = "<group>"; };
+		225673252677C27400C6B122 /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
+		225673272677C44700C6B122 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		225673292677C72900C6B122 /* SubscriptionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionStatus.swift; sourceTree = "<group>"; };
+		2256732E2677C86D00C6B122 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		22567334267A104E00C6B122 /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
+		22567338267A126D00C6B122 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2256733A267A1CD800C6B122 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		2256733C267B60D300C6B122 /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
+		2256733E267B619800C6B122 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		22AA9268267B66D900E038D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		22AA9269267B6A9A00E038D3 /* AccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
+		22AA926D267B6BF100E038D3 /* Endpoint+User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Endpoint+User.swift"; sourceTree = "<group>"; };
+		22AA926F267B6C0B00E038D3 /* Endpoint+Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Endpoint+Podcast.swift"; sourceTree = "<group>"; };
+		22AA9271267B6C5800E038D3 /* PodcastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastTests.swift; sourceTree = "<group>"; };
+		22AA9273267B700600E038D3 /* BaseTestCase+User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BaseTestCase+User.swift"; sourceTree = "<group>"; };
+		22AA9275267BC8EB00E038D3 /* Endpoint+SubscriptionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Endpoint+SubscriptionStatus.swift"; sourceTree = "<group>"; };
+		22AA9277267BC92D00E038D3 /* SubscriptionStatusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionStatusTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +126,11 @@
 		225672F92677C18B00C6B122 /* Pocketcasts */ = {
 			isa = PBXGroup;
 			children = (
-				225672FA2677C18B00C6B122 /* PocketcastsApp.swift */,
+				22AA9268267B66D900E038D3 /* Info.plist */,
+				2256732B2677C84100C6B122 /* Network */,
+				225673242677C23C00C6B122 /* Models */,
+				225673232677C1EA00C6B122 /* Pocketcasts.entitlements */,
+				225673222677C1C200C6B122 /* App */,
 				225672FC2677C18B00C6B122 /* ContentView.swift */,
 				225672FE2677C18F00C6B122 /* Assets.xcassets */,
 				225673002677C18F00C6B122 /* Preview Content */,
@@ -111,7 +149,11 @@
 		2256730A2677C19000C6B122 /* PocketcastsTests */ = {
 			isa = PBXGroup;
 			children = (
-				2256730B2677C19000C6B122 /* PocketcastsTests.swift */,
+				2256730B2677C19000C6B122 /* BaseTestCase.swift */,
+				2256733C267B60D300C6B122 /* LoginTests.swift */,
+				22AA9271267B6C5800E038D3 /* PodcastTests.swift */,
+				22AA9273267B700600E038D3 /* BaseTestCase+User.swift */,
+				22AA9277267BC92D00E038D3 /* SubscriptionStatusTests.swift */,
 			);
 			path = PocketcastsTests;
 			sourceTree = "<group>";
@@ -122,6 +164,56 @@
 				225673152677C19000C6B122 /* PocketcastsUITests.swift */,
 			);
 			path = PocketcastsUITests;
+			sourceTree = "<group>";
+		};
+		225673222677C1C200C6B122 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				225672FA2677C18B00C6B122 /* PocketcastsApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		225673242677C23C00C6B122 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				225673252677C27400C6B122 /* Podcast.swift */,
+				225673272677C44700C6B122 /* Episode.swift */,
+				225673292677C72900C6B122 /* SubscriptionStatus.swift */,
+				22567338267A126D00C6B122 /* User.swift */,
+				22AA9269267B6A9A00E038D3 /* AccessToken.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2256732B2677C84100C6B122 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				22AA926C267B6BDE00E038D3 /* PrivateEndpoints */,
+				22AA926B267B6BD500E038D3 /* PublicEndpoints */,
+				2256732E2677C86D00C6B122 /* Endpoint.swift */,
+				22567334267A104E00C6B122 /* URLSession.swift */,
+				2256733A267A1CD800C6B122 /* HTTPMethod.swift */,
+				2256733E267B619800C6B122 /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		22AA926B267B6BD500E038D3 /* PublicEndpoints */ = {
+			isa = PBXGroup;
+			children = (
+				22AA926D267B6BF100E038D3 /* Endpoint+User.swift */,
+			);
+			path = PublicEndpoints;
+			sourceTree = "<group>";
+		};
+		22AA926C267B6BDE00E038D3 /* PrivateEndpoints */ = {
+			isa = PBXGroup;
+			children = (
+				22AA926F267B6C0B00E038D3 /* Endpoint+Podcast.swift */,
+				22AA9275267BC8EB00E038D3 /* Endpoint+SubscriptionStatus.swift */,
+			);
+			path = PrivateEndpoints;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +232,8 @@
 			dependencies = (
 			);
 			name = Pocketcasts;
+			packageProductDependencies = (
+			);
 			productName = Pocketcasts;
 			productReference = 225672F72677C18B00C6B122 /* Pocketcasts.app */;
 			productType = "com.apple.product-type.application";
@@ -212,6 +306,8 @@
 				Base,
 			);
 			mainGroup = 225672EE2677C18B00C6B122;
+			packageReferences = (
+			);
 			productRefGroup = 225672F82677C18B00C6B122 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -254,8 +350,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2256732F2677C86D00C6B122 /* Endpoint.swift in Sources */,
+				22AA9276267BC8EB00E038D3 /* Endpoint+SubscriptionStatus.swift in Sources */,
 				225672FD2677C18B00C6B122 /* ContentView.swift in Sources */,
+				2256732A2677C72900C6B122 /* SubscriptionStatus.swift in Sources */,
+				22AA9270267B6C0B00E038D3 /* Endpoint+Podcast.swift in Sources */,
+				2256733B267A1CD800C6B122 /* HTTPMethod.swift in Sources */,
+				225673282677C44700C6B122 /* Episode.swift in Sources */,
+				2256733F267B619800C6B122 /* Network.swift in Sources */,
 				225672FB2677C18B00C6B122 /* PocketcastsApp.swift in Sources */,
+				22567339267A126D00C6B122 /* User.swift in Sources */,
+				22567335267A104E00C6B122 /* URLSession.swift in Sources */,
+				225673262677C27400C6B122 /* Podcast.swift in Sources */,
+				22AA926E267B6BF100E038D3 /* Endpoint+User.swift in Sources */,
+				22AA926A267B6A9A00E038D3 /* AccessToken.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +371,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2256730C2677C19000C6B122 /* PocketcastsTests.swift in Sources */,
+				2256730C2677C19000C6B122 /* BaseTestCase.swift in Sources */,
+				22AA9272267B6C5800E038D3 /* PodcastTests.swift in Sources */,
+				22AA9278267BC92D00E038D3 /* SubscriptionStatusTests.swift in Sources */,
+				2256733D267B60D300C6B122 /* LoginTests.swift in Sources */,
+				22AA9274267B700600E038D3 /* BaseTestCase+User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,10 +455,11 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -398,9 +511,10 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
@@ -412,18 +526,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Pocketcasts/Pocketcasts.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pocketcasts/Preview Content\"";
 				DEVELOPMENT_TEAM = 83Q998B277;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pocketcasts/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = Pocketcasts;
+				INFOPLIST_KEY_CFBundleName = Pocketcasts;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -431,9 +550,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.qeude.Pocketcasts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Debug;
 		};
@@ -442,18 +563,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Pocketcasts/Pocketcasts.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pocketcasts/Preview Content\"";
 				DEVELOPMENT_TEAM = 83Q998B277;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pocketcasts/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = Pocketcasts;
+				INFOPLIST_KEY_CFBundleName = Pocketcasts;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,9 +587,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.qeude.Pocketcasts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Release;
 		};
@@ -488,7 +616,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pocketcasts.app/Pocketcasts";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pocketcasts.app/Contents/MacOS/Pocketcasts";
 			};
 			name = Debug;
 		};
@@ -513,7 +641,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pocketcasts.app/Pocketcasts";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pocketcasts.app/Contents/MacOS/Pocketcasts";
 			};
 			name = Release;
 		};
