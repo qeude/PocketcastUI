@@ -1,0 +1,23 @@
+strings:
+    inputs: Pocketcasts/Resources/Base.lproj
+    filter: .+\.strings$
+    outputs:
+        templateName: structured-swift5
+        output: Pocketcasts/Sources/Generated/Strings.swift
+xcassets:
+  - inputs:
+      - Pocketcasts/Resources/Colors.xcassets
+    outputs:
+      - templateName: swift5
+        output: Pocketcasts/Sources/Generated/Colors.swift
+        params:
+          enumName: Colors
+  - inputs:
+      - Pocketcasts/Resources/Images.xcassets
+    outputs:
+      - templateName: swift5
+        output: Pocketcasts/Sources/Generated/Images.swift
+        params:
+          enumName: Images
+    
+ 
