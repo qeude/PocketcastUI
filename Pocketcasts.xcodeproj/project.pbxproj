@@ -29,6 +29,14 @@
 		22AA9274267B700600E038D3 /* BaseTestCase+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA9273267B700600E038D3 /* BaseTestCase+User.swift */; };
 		22AA9276267BC8EB00E038D3 /* Endpoint+SubscriptionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA9275267BC8EB00E038D3 /* Endpoint+SubscriptionStatus.swift */; };
 		22AA9278267BC92D00E038D3 /* SubscriptionStatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA9277267BC92D00E038D3 /* SubscriptionStatusTests.swift */; };
+		22AA9286267BD48100E038D3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA9285267BD48100E038D3 /* LoginView.swift */; };
+		22AA928B267BE4CD00E038D3 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA928A267BE4CD00E038D3 /* AppState.swift */; };
+		22AA9290267CB94600E038D3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA928F267CB94600E038D3 /* HomeView.swift */; };
+		22AA9293267CC19A00E038D3 /* UserDefaults+ObjectSavable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA9292267CC19A00E038D3 /* UserDefaults+ObjectSavable.swift */; };
+		22AA9296267E135100E038D3 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA9295267E135100E038D3 /* AccountView.swift */; };
+		22AA9299267FCCCA00E038D3 /* PodcastsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA9298267FCCCA00E038D3 /* PodcastsView.swift */; };
+		22AA929B267FCCF900E038D3 /* PodcastsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA929A267FCCF900E038D3 /* PodcastsViewModel.swift */; };
+		22AA929D267FCF3100E038D3 /* PodcastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA929C267FCF3100E038D3 /* PodcastCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +84,14 @@
 		22AA9273267B700600E038D3 /* BaseTestCase+User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BaseTestCase+User.swift"; sourceTree = "<group>"; };
 		22AA9275267BC8EB00E038D3 /* Endpoint+SubscriptionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Endpoint+SubscriptionStatus.swift"; sourceTree = "<group>"; };
 		22AA9277267BC92D00E038D3 /* SubscriptionStatusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionStatusTests.swift; sourceTree = "<group>"; };
+		22AA9285267BD48100E038D3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		22AA928A267BE4CD00E038D3 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		22AA928F267CB94600E038D3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		22AA9292267CC19A00E038D3 /* UserDefaults+ObjectSavable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+ObjectSavable.swift"; sourceTree = "<group>"; };
+		22AA9295267E135100E038D3 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		22AA9298267FCCCA00E038D3 /* PodcastsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastsView.swift; sourceTree = "<group>"; };
+		22AA929A267FCCF900E038D3 /* PodcastsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastsViewModel.swift; sourceTree = "<group>"; };
+		22AA929C267FCF3100E038D3 /* PodcastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +142,8 @@
 		225672F92677C18B00C6B122 /* Pocketcasts */ = {
 			isa = PBXGroup;
 			children = (
+				22AA9291267CC18800E038D3 /* Utils */,
+				22AA9283267BD45500E038D3 /* Screens */,
 				22AA9268267B66D900E038D3 /* Info.plist */,
 				2256732B2677C84100C6B122 /* Network */,
 				225673242677C23C00C6B122 /* Models */,
@@ -170,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				225672FA2677C18B00C6B122 /* PocketcastsApp.swift */,
+				22AA928A267BE4CD00E038D3 /* AppState.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -214,6 +233,59 @@
 				22AA9275267BC8EB00E038D3 /* Endpoint+SubscriptionStatus.swift */,
 			);
 			path = PrivateEndpoints;
+			sourceTree = "<group>";
+		};
+		22AA9283267BD45500E038D3 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				22AA9297267FCCBA00E038D3 /* Podcasts */,
+				22AA9294267E132A00E038D3 /* Account */,
+				22AA928E267CB93700E038D3 /* Home */,
+				22AA9284267BD47400E038D3 /* Login */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		22AA9284267BD47400E038D3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				22AA9285267BD48100E038D3 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		22AA928E267CB93700E038D3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				22AA928F267CB94600E038D3 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		22AA9291267CC18800E038D3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				22AA9292267CC19A00E038D3 /* UserDefaults+ObjectSavable.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		22AA9294267E132A00E038D3 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				22AA9295267E135100E038D3 /* AccountView.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		22AA9297267FCCBA00E038D3 /* Podcasts */ = {
+			isa = PBXGroup;
+			children = (
+				22AA9298267FCCCA00E038D3 /* PodcastsView.swift */,
+				22AA929A267FCCF900E038D3 /* PodcastsViewModel.swift */,
+				22AA929C267FCF3100E038D3 /* PodcastCell.swift */,
+			);
+			path = Podcasts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,16 +422,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22AA9293267CC19A00E038D3 /* UserDefaults+ObjectSavable.swift in Sources */,
 				2256732F2677C86D00C6B122 /* Endpoint.swift in Sources */,
 				22AA9276267BC8EB00E038D3 /* Endpoint+SubscriptionStatus.swift in Sources */,
+				22AA929B267FCCF900E038D3 /* PodcastsViewModel.swift in Sources */,
 				225672FD2677C18B00C6B122 /* ContentView.swift in Sources */,
+				22AA9286267BD48100E038D3 /* LoginView.swift in Sources */,
+				22AA9299267FCCCA00E038D3 /* PodcastsView.swift in Sources */,
 				2256732A2677C72900C6B122 /* SubscriptionStatus.swift in Sources */,
+				22AA929D267FCF3100E038D3 /* PodcastCell.swift in Sources */,
+				22AA9290267CB94600E038D3 /* HomeView.swift in Sources */,
 				22AA9270267B6C0B00E038D3 /* Endpoint+Podcast.swift in Sources */,
 				2256733B267A1CD800C6B122 /* HTTPMethod.swift in Sources */,
 				225673282677C44700C6B122 /* Episode.swift in Sources */,
 				2256733F267B619800C6B122 /* Network.swift in Sources */,
 				225672FB2677C18B00C6B122 /* PocketcastsApp.swift in Sources */,
 				22567339267A126D00C6B122 /* User.swift in Sources */,
+				22AA9296267E135100E038D3 /* AccountView.swift in Sources */,
+				22AA928B267BE4CD00E038D3 /* AppState.swift in Sources */,
 				22567335267A104E00C6B122 /* URLSession.swift in Sources */,
 				225673262677C27400C6B122 /* Podcast.swift in Sources */,
 				22AA926E267B6BF100E038D3 /* Endpoint+User.swift in Sources */,

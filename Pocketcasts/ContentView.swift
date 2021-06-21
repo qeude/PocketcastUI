@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var appState = AppState()
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+      if appState.user == nil {
+        LoginView().environmentObject(appState)
+      } else {
+        HomeView().environmentObject(appState)
+      }
     }
 }
 

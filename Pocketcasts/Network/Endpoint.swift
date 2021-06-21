@@ -49,7 +49,7 @@ extension Endpoint {
   func makeRequest(with data: Kind.RequestData) -> URLRequest? {
     var components = URLComponents()
     components.scheme = "https"
-    components.host = "api.pocketcasts.com"
+    components.host = Network.baseUrl
     components.path = "/" + path
     components.queryItems = method == .get && !parameters.isEmpty ? parameters.map { URLQueryItem(name: $0, value: $1)} : nil
     

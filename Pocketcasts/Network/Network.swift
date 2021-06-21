@@ -8,6 +8,9 @@
 import Foundation
 
 struct Network {
+  static let baseUrl = "api.pocketcasts.com"
+  static let baseImageUrl = "https://static.pocketcasts.com/"
+  static let shared = Network()
   private let urlSession = URLSession.shared
 }
 

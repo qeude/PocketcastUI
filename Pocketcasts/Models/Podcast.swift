@@ -30,6 +30,15 @@ struct Podcast: Codable, Identifiable {
     return url
   }
   
+  var imageUrl: URL? {
+    let rawUrl = "\(Network.baseImageUrl)discover/images/280/\(self.id.uuidString.lowercased()).jpg"
+    print(rawUrl)
+    guard let url = URL(string: rawUrl) else {
+      return nil
+    }
+    return url
+  }
+  
   enum CodingKeys: String, CodingKey {
     case id = "uuid"
     case lastEpisodeId = "lastEpisodeUuid"
