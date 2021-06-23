@@ -27,7 +27,8 @@
 		2256733B267A1CD800C6B122 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2256733A267A1CD800C6B122 /* HTTPMethod.swift */; };
 		2256733D267B60D300C6B122 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2256733C267B60D300C6B122 /* LoginTests.swift */; };
 		2256733F267B619800C6B122 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2256733E267B619800C6B122 /* Network.swift */; };
-		22AA926A267B6A9A00E038D3 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA9269267B6A9A00E038D3 /* AccessToken.swift */; };
+		226AC4A12683446B00F9C34D /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 226AC49F2683446B00F9C34D /* Main.xcdatamodeld */; };
+		226AC4A32683450600F9C34D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226AC4A22683450500F9C34D /* Persistence.swift */; };
 		22AA926E267B6BF100E038D3 /* Endpoint+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA926D267B6BF100E038D3 /* Endpoint+User.swift */; };
 		22AA9270267B6C0B00E038D3 /* Endpoint+Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA926F267B6C0B00E038D3 /* Endpoint+Podcast.swift */; };
 		22AA9272267B6C5800E038D3 /* PodcastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA9271267B6C5800E038D3 /* PodcastTests.swift */; };
@@ -92,8 +93,9 @@
 		2256733A267A1CD800C6B122 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		2256733C267B60D300C6B122 /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
 		2256733E267B619800C6B122 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		226AC4A02683446B00F9C34D /* Pocketcasts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pocketcasts.xcdatamodel; sourceTree = "<group>"; };
+		226AC4A22683450500F9C34D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		22AA9268267B66D900E038D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		22AA9269267B6A9A00E038D3 /* AccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
 		22AA926D267B6BF100E038D3 /* Endpoint+User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Endpoint+User.swift"; sourceTree = "<group>"; };
 		22AA926F267B6C0B00E038D3 /* Endpoint+Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Endpoint+Podcast.swift"; sourceTree = "<group>"; };
 		22AA9271267B6C5800E038D3 /* PodcastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastTests.swift; sourceTree = "<group>"; };
@@ -231,11 +233,12 @@
 		225673242677C23C00C6B122 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				226AC49F2683446B00F9C34D /* Main.xcdatamodeld */,
 				225673252677C27400C6B122 /* Podcast.swift */,
 				225673272677C44700C6B122 /* Episode.swift */,
 				225673292677C72900C6B122 /* SubscriptionStatus.swift */,
 				22567338267A126D00C6B122 /* User.swift */,
-				22AA9269267B6A9A00E038D3 /* AccessToken.swift */,
+				226AC4A22683450500F9C34D /* Persistence.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -545,10 +548,12 @@
 				2256733B267A1CD800C6B122 /* HTTPMethod.swift in Sources */,
 				2231EAEA2681FAEE00AE917E /* NowListening.swift in Sources */,
 				2231EAEC2682644F00AE917E /* Logo.swift in Sources */,
+				226AC4A32683450600F9C34D /* Persistence.swift in Sources */,
 				225673282677C44700C6B122 /* Episode.swift in Sources */,
 				2256733F267B619800C6B122 /* Network.swift in Sources */,
 				225672FB2677C18B00C6B122 /* PocketcastsApp.swift in Sources */,
 				22567339267A126D00C6B122 /* User.swift in Sources */,
+				226AC4A12683446B00F9C34D /* Main.xcdatamodeld in Sources */,
 				22AA9296267E135100E038D3 /* AccountView.swift in Sources */,
 				2231EAE02681191500AE917E /* Color.swift in Sources */,
 				2231EAE62681250C00AE917E /* VolumeSlider.swift in Sources */,
@@ -557,7 +562,6 @@
 				225673262677C27400C6B122 /* Podcast.swift in Sources */,
 				22AA92C02680AE2400E038D3 /* Images.swift in Sources */,
 				22AA926E267B6BF100E038D3 /* Endpoint+User.swift in Sources */,
-				22AA926A267B6A9A00E038D3 /* AccessToken.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -925,6 +929,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		226AC49F2683446B00F9C34D /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				226AC4A02683446B00F9C34D /* Pocketcasts.xcdatamodel */,
+			);
+			currentVersion = 226AC4A02683446B00F9C34D /* Pocketcasts.xcdatamodel */;
+			path = Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 225672EF2677C18B00C6B122 /* Project object */;
 }

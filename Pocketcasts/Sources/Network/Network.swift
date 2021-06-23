@@ -16,15 +16,24 @@ struct Network {
 
 extension Network {
   func login(email: String, password: String) async throws -> User {
-    let accessToken = try await urlSession.send(endpoint: .login(email: email, password: password), using: ())
-    return User(email: email, accessToken: accessToken)
+    let fetchedUser = try await urlSession.send(endpoint: .login(email: email, password: password), using: ())
+    fetchedUser.email = email
+    PersistenceController.shared.save()
+    return fetchedUser
   }
   
   func listPodcasts(with user: User) async throws -> [Podcast] {
-    return try await urlSession.send(endpoint: .listPodcasts, using: user.accesToken)
+    let podcasts = try await urlSession.send(endpoint: .listPodcasts, using: user.accessToken!)
+    PersistenceController.shared.save()
+    return podcasts
   }
   
   func listSubscription(with user: User) async throws -> [SubscriptionStatus] {
-    return try await urlSession.send(endpoint: .listSubscriptions, using: user.accesToken)
+    let subscriptions = try await urlSession.send(endpoint: .listSubscriptions, using: user.accessToken!)
+    subscriptions.map { subscription in
+      subscription.user = user
+    }
+    PersistenceController.shared.save()
+    return subscriptions
   }
 }

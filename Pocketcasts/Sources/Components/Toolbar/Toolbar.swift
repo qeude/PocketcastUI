@@ -10,7 +10,6 @@ import SwiftUI
 struct Toolbar: View {
     var body: some View {
       Group {
-       
         Spacer()
       }
     }

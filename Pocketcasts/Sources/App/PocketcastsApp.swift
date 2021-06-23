@@ -9,11 +9,17 @@ import SwiftUI
 
 @main
 struct PocketcastsApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-        .windowToolbarStyle(.unified(showsTitle: false))
-        .windowStyle(.titleBar)
+  @Environment(\.scenePhase) var scenePhase
+  let persistenceController = PersistenceController.shared
+  var body: some Scene {
+    WindowGroup {
+      ContentView()
+        .environment(\.managedObjectContext, persistenceController.container.viewContext)
     }
+    .onChange(of: scenePhase) { _ in
+      persistenceController.save()
+    }
+    .windowToolbarStyle(.unified(showsTitle: false))
+    .windowStyle(.titleBar)
+  }
 }
