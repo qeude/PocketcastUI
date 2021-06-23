@@ -11,6 +11,7 @@ import SwiftUI
 @MainActor
 class AppState: ObservableObject {
   @Published var user: User? = UserDefaults.standard.getObject(forKey: "User", castTo: User.self)
+  @Published var playingEpisode: Episode? = nil
   
   func login(email: String, password: String, rememberMe: Bool = false) async {
     self.user = try? await Network.shared.login(email: email, password: password)

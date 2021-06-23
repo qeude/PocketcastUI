@@ -15,7 +15,7 @@ struct PodcastCell: View {
           .aspectRatio(contentMode: .fit)
           .cornerRadius(8)
       } placeholder: {
-        Color.secondary
+        Color.secondaryBackground
           .redacted(reason: .placeholder)
           .aspectRatio(contentMode: .fit)
           .cornerRadius(8)

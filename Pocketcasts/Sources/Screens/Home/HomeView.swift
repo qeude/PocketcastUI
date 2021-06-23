@@ -54,27 +54,56 @@ struct HomeView: View {
     }
   }
   @EnvironmentObject var appState: AppState
-
+  
   @State private var selection: NavigationItem? = .podcasts
-    var body: some View {
-      NavigationView {
-        List {
-          ForEach(NavigationItem.allCases, id:\.self) { item in
-            NavigationLink(tag: item, selection: $selection) {
-              item.destination.environmentObject(appState)
-            } label: {
-              Label(NavigationItem.name(for: item), systemImage: NavigationItem.systemImage(for: item))
-            }
+  var body: some View {
+    NavigationView {
+      List {
+        ForEach(NavigationItem.allCases, id:\.self) { item in
+          NavigationLink(tag: item, selection: $selection) {
+            item.destination.environmentObject(appState)
+          } label: {
+            Label(NavigationItem.name(for: item), systemImage: NavigationItem.systemImage(for: item))
           }
         }
-        .navigationTitle("PocketCasts")
-        .listStyle(.sidebar)
+      }
+      .navigationTitle("PocketCasts")
+      .listStyle(.sidebar)
+    }
+    .toolbar {
+      ToolbarItemGroup(placement: .status) {
+        Spacer()
+        HStack {
+          Button(action: {
+            print("back")
+          }) {
+            Image(systemName: "gobackward.10")
+          }
+          Button(action: {
+            print("play")
+          }) {
+            Image(systemName: "play.fill")
+          }
+          Button(action: {
+            print("forward")
+          }) {
+            Image(systemName: "goforward.45")
+          }
+        }
+        Spacer()
+        NowListening(episode: $appState.playingEpisode)
+          .cornerRadius(2)
+          .padding(EdgeInsets(top: -5, leading: 0, bottom: -5, trailing: 0))
+          .frame(minWidth: 350, maxWidth: 600,  idealHeight: 50)
+        Spacer()
+        VolumeSlider().frame(width: 150)
+        Spacer()
       }
     }
+  }
 }
-
 struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
-    }
+  static var previews: some View {
+    HomeView()
+  }
 }

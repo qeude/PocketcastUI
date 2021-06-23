@@ -12,12 +12,12 @@ struct PodcastsView: View {
   @ObservedObject var podcastsViewModel: PodcastsViewModel = PodcastsViewModel()
   
   private var items: [GridItem] = [
-    GridItem(.adaptive(minimum: 120, maximum: 150))
+    GridItem(.adaptive(minimum: 120, maximum: 150), spacing: 20)
   ]
   
   var body: some View {
     ScrollView(.vertical) {
-      LazyVGrid(columns: items, alignment: .leading, spacing: 24) {
+      LazyVGrid(columns: items, alignment: .leading, spacing: 20) {
         Section(header: Text("Podcasts").font(.largeTitle).bold()) {
           ForEach(podcastsViewModel.podcasts) { podcast in
             PodcastCell(podcast: podcast)

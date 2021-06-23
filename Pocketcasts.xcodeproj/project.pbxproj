@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2231EAE02681191500AE917E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2231EADF2681191500AE917E /* Color.swift */; };
+		2231EAE42681215200AE917E /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2231EAE32681215200AE917E /* Toolbar.swift */; };
+		2231EAE62681250C00AE917E /* VolumeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2231EAE52681250C00AE917E /* VolumeSlider.swift */; };
+		2231EAE826812B0B00AE917E /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2231EAE726812B0B00AE917E /* View+Extensions.swift */; };
+		2231EAEA2681FAEE00AE917E /* NowListening.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2231EAE92681FAEE00AE917E /* NowListening.swift */; };
+		2231EAEC2682644F00AE917E /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2231EAEB2682644E00AE917E /* Logo.swift */; };
 		225672FB2677C18B00C6B122 /* PocketcastsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225672FA2677C18B00C6B122 /* PocketcastsApp.swift */; };
 		225672FD2677C18B00C6B122 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225672FC2677C18B00C6B122 /* ContentView.swift */; };
 		225673022677C18F00C6B122 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 225673012677C18F00C6B122 /* Preview Assets.xcassets */; };
@@ -41,7 +47,6 @@
 		22AA92B42680ACA200E038D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22AA92B32680ACA200E038D3 /* Images.xcassets */; };
 		22AA92B62680ACC100E038D3 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22AA92B52680ACC100E038D3 /* Colors.xcassets */; };
 		22AA92BA2680ACEE00E038D3 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA92B82680ACEE00E038D3 /* Strings.swift */; };
-		22AA92BF2680AE2400E038D3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA92BD2680AE2400E038D3 /* Colors.swift */; };
 		22AA92C02680AE2400E038D3 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA92BE2680AE2400E038D3 /* Images.swift */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +68,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2231EADF2681191500AE917E /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		2231EAE32681215200AE917E /* Toolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toolbar.swift; sourceTree = "<group>"; };
+		2231EAE52681250C00AE917E /* VolumeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeSlider.swift; sourceTree = "<group>"; };
+		2231EAE726812B0B00AE917E /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		2231EAE92681FAEE00AE917E /* NowListening.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowListening.swift; sourceTree = "<group>"; };
+		2231EAEB2682644E00AE917E /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
 		225672F72677C18B00C6B122 /* Pocketcasts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pocketcasts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		225672FA2677C18B00C6B122 /* PocketcastsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketcastsApp.swift; sourceTree = "<group>"; };
 		225672FC2677C18B00C6B122 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,7 +113,6 @@
 		22AA92B32680ACA200E038D3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		22AA92B52680ACC100E038D3 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		22AA92B82680ACEE00E038D3 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
-		22AA92BD2680AE2400E038D3 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		22AA92BE2680AE2400E038D3 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +141,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2231EAE12681213400AE917E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2231EAE22681213D00AE917E /* Toolbar */,
+				2231EAEB2682644E00AE917E /* Logo.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2231EAE22681213D00AE917E /* Toolbar */ = {
+			isa = PBXGroup;
+			children = (
+				2231EAE32681215200AE917E /* Toolbar.swift */,
+				2231EAE52681250C00AE917E /* VolumeSlider.swift */,
+				2231EAE92681FAEE00AE917E /* NowListening.swift */,
+			);
+			path = Toolbar;
+			sourceTree = "<group>";
+		};
 		225672EE2677C18B00C6B122 = {
 			isa = PBXGroup;
 			children = (
@@ -272,6 +301,8 @@
 			isa = PBXGroup;
 			children = (
 				22AA9292267CC19A00E038D3 /* UserDefaults+ObjectSavable.swift */,
+				2231EADF2681191500AE917E /* Color.swift */,
+				2231EAE726812B0B00AE917E /* View+Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -297,6 +328,7 @@
 		22AA92A32680A5B000E038D3 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				2231EAE12681213400AE917E /* Components */,
 				22AA92AD2680ABFC00E038D3 /* Generated */,
 				22AA9291267CC18800E038D3 /* Utils */,
 				22AA9283267BD45500E038D3 /* Screens */,
@@ -322,7 +354,6 @@
 		22AA92AD2680ABFC00E038D3 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
-				22AA92BD2680AE2400E038D3 /* Colors.swift */,
 				22AA92BE2680AE2400E038D3 /* Images.swift */,
 				22AA92B82680ACEE00E038D3 /* Strings.swift */,
 				22AA92AE2680AC0A00E038D3 /* .gitkeep */,
@@ -345,7 +376,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 225673192677C19000C6B122 /* Build configuration list for PBXNativeTarget "Pocketcasts" */;
 			buildPhases = (
-				22011E372680AEEE00C55EDC /* ShellScript */,
+				22011E372680AEEE00C55EDC /* SwiftGen */,
 				225672F32677C18B00C6B122 /* Sources */,
 				225672F42677C18B00C6B122 /* Frameworks */,
 				225672F52677C18B00C6B122 /* Resources */,
@@ -472,7 +503,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		22011E372680AEEE00C55EDC /* ShellScript */ = {
+		22011E372680AEEE00C55EDC /* SwiftGen */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -481,6 +512,7 @@
 			);
 			inputPaths = (
 			);
+			name = SwiftGen;
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -497,7 +529,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22AA9293267CC19A00E038D3 /* UserDefaults+ObjectSavable.swift in Sources */,
-				22AA92BF2680AE2400E038D3 /* Colors.swift in Sources */,
+				2231EAE42681215200AE917E /* Toolbar.swift in Sources */,
 				2256732F2677C86D00C6B122 /* Endpoint.swift in Sources */,
 				22AA9276267BC8EB00E038D3 /* Endpoint+SubscriptionStatus.swift in Sources */,
 				22AA929B267FCCF900E038D3 /* PodcastsViewModel.swift in Sources */,
@@ -506,15 +538,20 @@
 				22AA9299267FCCCA00E038D3 /* PodcastsView.swift in Sources */,
 				2256732A2677C72900C6B122 /* SubscriptionStatus.swift in Sources */,
 				22AA929D267FCF3100E038D3 /* PodcastCell.swift in Sources */,
+				2231EAE826812B0B00AE917E /* View+Extensions.swift in Sources */,
 				22AA9290267CB94600E038D3 /* HomeView.swift in Sources */,
 				22AA92BA2680ACEE00E038D3 /* Strings.swift in Sources */,
 				22AA9270267B6C0B00E038D3 /* Endpoint+Podcast.swift in Sources */,
 				2256733B267A1CD800C6B122 /* HTTPMethod.swift in Sources */,
+				2231EAEA2681FAEE00AE917E /* NowListening.swift in Sources */,
+				2231EAEC2682644F00AE917E /* Logo.swift in Sources */,
 				225673282677C44700C6B122 /* Episode.swift in Sources */,
 				2256733F267B619800C6B122 /* Network.swift in Sources */,
 				225672FB2677C18B00C6B122 /* PocketcastsApp.swift in Sources */,
 				22567339267A126D00C6B122 /* User.swift in Sources */,
 				22AA9296267E135100E038D3 /* AccountView.swift in Sources */,
+				2231EAE02681191500AE917E /* Color.swift in Sources */,
+				2231EAE62681250C00AE917E /* VolumeSlider.swift in Sources */,
 				22AA928B267BE4CD00E038D3 /* AppState.swift in Sources */,
 				22567335267A104E00C6B122 /* URLSession.swift in Sources */,
 				225673262677C27400C6B122 /* Podcast.swift in Sources */,

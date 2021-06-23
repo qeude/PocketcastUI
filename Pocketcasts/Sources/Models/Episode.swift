@@ -21,6 +21,16 @@ struct Episode: Codable, Identifiable {
     return url
   }
   
+  var isDateLastYear: Bool {
+    return Calendar.current.component(.year, from: self.publicationDate) < Calendar.current.component(.year, from: Date())
+  }
+  
+  var formattedDate: String {
+    let formatter = DateFormatter()
+    formatter.dateFormat = isDateLastYear ? "dd MMMM yyyy" : "dd MMMM"
+    return formatter.string(from: publicationDate)
+  }
+  
   enum CodingKeys: String, CodingKey {
     case id = "uuid"
     case rawUrl = "url"

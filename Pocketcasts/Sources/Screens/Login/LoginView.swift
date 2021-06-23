@@ -29,7 +29,7 @@ struct LoginView: View {
   @State private var showPassword: Bool = false
   var body: some View {
     ZStack {
-      Color("Background")
+      Color.primaryBackground
       VStack {
         Image("logo")
           .padding()

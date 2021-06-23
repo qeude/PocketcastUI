@@ -13,5 +13,7 @@ struct PocketcastsApp: App {
         WindowGroup {
             ContentView()
         }
+        .windowToolbarStyle(.unified(showsTitle: false))
+        .windowStyle(.titleBar)
     }
 }
