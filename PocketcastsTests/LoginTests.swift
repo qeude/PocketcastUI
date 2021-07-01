@@ -12,8 +12,8 @@ class LoginTests: BaseTestCase {
   func testLogin() async {
     let network = Network()
     let user = try! await network.login(email: ProcessInfo.processInfo.environment["POCKETCAST_EMAIL"]!, password: ProcessInfo.processInfo.environment["POCKETCAST_PASSWORD"]!)
-    XCTAssertEqual(user.email, "quentineude@gmail.com")
-    XCTAssertNotNil(user.accesToken)
+    XCTAssertEqual(user.email, ProcessInfo.processInfo.environment["POCKETCAST_EMAIL"]!)
+    XCTAssertNotNil(user.accessToken)
   }
   
   func testLoginWithWrongCredentials() async {

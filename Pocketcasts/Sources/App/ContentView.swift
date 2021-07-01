@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var appState = AppState()
-    var body: some View {
-      if appState.user == nil {
-        LoginView().environmentObject(appState)
-      } else {
-        HomeView().environmentObject(appState)
-      }
+  @EnvironmentObject var appState: AppState
+  
+  var body: some View {
+    if appState.user == nil {
+      LoginView()
+    } else {
+      HomeView()
     }
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {

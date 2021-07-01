@@ -61,16 +61,20 @@ struct HomeView: View {
       List {
         ForEach(NavigationItem.allCases, id:\.self) { item in
           NavigationLink(tag: item, selection: $selection) {
-            item.destination.environmentObject(appState)
+            item.destination
           } label: {
             Label(NavigationItem.name(for: item), systemImage: NavigationItem.systemImage(for: item))
           }
         }
       }
-      .navigationTitle("PocketCasts")
       .listStyle(.sidebar)
     }
     .toolbar {
+      ToolbarItem(placement: .automatic) {
+        Button(action: toggleSidebar) {
+          Image(systemName: "sidebar.left")
+        }
+      }
       ToolbarItemGroup(placement: .status) {
         Spacer()
         HStack {
@@ -101,9 +105,14 @@ struct HomeView: View {
       }
     }
   }
+  
+  func toggleSidebar() {
+    NSApp.keyWindow?.firstResponder?
+      .tryToPerform(#selector(NSSplitViewController.toggleSidebar(_:)), with: nil)
+  }
 }
 struct HomeView_Previews: PreviewProvider {
   static var previews: some View {
-    HomeView()
+    HomeView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
   }
 }

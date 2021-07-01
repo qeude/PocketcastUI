@@ -34,7 +34,8 @@ struct PodcastsView: View {
 }
 
 struct PodcastsView_Previews: PreviewProvider {
-    static var previews: some View {
-        PodcastsView()
-    }
+
+  static var previews: some View {
+    PodcastsView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+  }
 }

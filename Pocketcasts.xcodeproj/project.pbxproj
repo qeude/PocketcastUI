@@ -29,6 +29,7 @@
 		2256733F267B619800C6B122 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2256733E267B619800C6B122 /* Network.swift */; };
 		226AC4A12683446B00F9C34D /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 226AC49F2683446B00F9C34D /* Main.xcdatamodeld */; };
 		226AC4A32683450600F9C34D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226AC4A22683450500F9C34D /* Persistence.swift */; };
+		226AC4A52683C88600F9C34D /* Endpoint+Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226AC4A42683C88600F9C34D /* Endpoint+Episode.swift */; };
 		22AA926E267B6BF100E038D3 /* Endpoint+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA926D267B6BF100E038D3 /* Endpoint+User.swift */; };
 		22AA9270267B6C0B00E038D3 /* Endpoint+Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA926F267B6C0B00E038D3 /* Endpoint+Podcast.swift */; };
 		22AA9272267B6C5800E038D3 /* PodcastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA9271267B6C5800E038D3 /* PodcastTests.swift */; };
@@ -95,6 +96,7 @@
 		2256733E267B619800C6B122 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		226AC4A02683446B00F9C34D /* Pocketcasts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pocketcasts.xcdatamodel; sourceTree = "<group>"; };
 		226AC4A22683450500F9C34D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		226AC4A42683C88600F9C34D /* Endpoint+Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Endpoint+Episode.swift"; sourceTree = "<group>"; };
 		22AA9268267B66D900E038D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22AA926D267B6BF100E038D3 /* Endpoint+User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Endpoint+User.swift"; sourceTree = "<group>"; };
 		22AA926F267B6C0B00E038D3 /* Endpoint+Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Endpoint+Podcast.swift"; sourceTree = "<group>"; };
@@ -269,6 +271,7 @@
 			children = (
 				22AA926F267B6C0B00E038D3 /* Endpoint+Podcast.swift */,
 				22AA9275267BC8EB00E038D3 /* Endpoint+SubscriptionStatus.swift */,
+				226AC4A42683C88600F9C34D /* Endpoint+Episode.swift */,
 			);
 			path = PrivateEndpoints;
 			sourceTree = "<group>";
@@ -537,6 +540,7 @@
 				22AA9276267BC8EB00E038D3 /* Endpoint+SubscriptionStatus.swift in Sources */,
 				22AA929B267FCCF900E038D3 /* PodcastsViewModel.swift in Sources */,
 				225672FD2677C18B00C6B122 /* ContentView.swift in Sources */,
+				226AC4A52683C88600F9C34D /* Endpoint+Episode.swift in Sources */,
 				22AA9286267BD48100E038D3 /* LoginView.swift in Sources */,
 				22AA9299267FCCCA00E038D3 /* PodcastsView.swift in Sources */,
 				2256732A2677C72900C6B122 /* SubscriptionStatus.swift in Sources */,

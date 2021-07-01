@@ -8,24 +8,32 @@
 import Foundation
 import SwiftUI
 
-@MainActor
 class AppState: ObservableObject {
-  @Published var user: User? = UserDefaults.standard.getObject(forKey: "User", castTo: User.self)
+  @Published var isLoggedIn: Bool = UserDefaults.standard.bool(forKey: "isLoggedIn")
+  @Published var user: User? = nil
   @Published var playingEpisode: Episode? = nil
   
-  func login(email: String, password: String, rememberMe: Bool = false) async {
-    self.user = try? await Network.shared.login(email: email, password: password)
-    if rememberMe {
+  init() {
+    if isLoggedIn {
+      let request = User.fetchRequest()
       do {
-        try UserDefaults.standard.setObject(self.user, forKey: "User")
+        let users = try PersistenceController.shared.container.viewContext.fetch(request)
+        self.user = users.first
       } catch {
-          print(error.localizedDescription)
+        print(error)
       }
     }
   }
   
+  func login(email: String, password: String, rememberMe: Bool = false) async {
+    self.user = try? await Network.shared.login(email: email, password: password)
+    if rememberMe {
+      UserDefaults.standard.set(isLoggedIn, forKey: "isLoggedIn")
+    }
+  }
+  
   func logout() {
-    UserDefaults.standard.removeObject(forKey: "User")
     self.user = nil
+    UserDefaults.standard.removeObject(forKey: "isLoggedIn")
   }
 }

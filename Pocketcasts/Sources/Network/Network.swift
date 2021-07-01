@@ -29,9 +29,10 @@ extension Network {
   }
   
   func listSubscription(with user: User) async throws -> [SubscriptionStatus] {
-    let subscriptions = try await urlSession.send(endpoint: .listSubscriptions, using: user.accessToken!)
-    subscriptions.map { subscription in
+    var subscriptions = try await urlSession.send(endpoint: .listSubscriptions, using: user.accessToken!)
+    subscriptions = subscriptions.map { subscription in
       subscription.user = user
+      return subscription
     }
     PersistenceController.shared.save()
     return subscriptions
